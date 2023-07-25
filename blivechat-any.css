@@ -1,7 +1,7 @@
 /*
   萨卡班甲鱼样式优化版 By ZeroAsh (https://space.bilibili.com/403496)
   设计 & 创意 By 魔理叉 (https://space.bilibili.com/3617477)
-  
+
   Zero版改动说明
   =======================
   Zero版完全重写了基础样式
@@ -17,13 +17,52 @@
   关注阿伊蕾特喵，关注阿伊蕾特谢谢喵 https://space.bilibili.com/117906
   关注阿伊蕾特喵，关注阿伊蕾特谢谢喵 https://space.bilibili.com/117906
 */
-yt-live-chat-renderer {
-  background-color: transparent
-}
+
+/*
+  删除下面“===”中的代码即可显示礼物停留栏
+  =======================
+*/
 yt-live-chat-ticker-renderer {
   display: none;
 }
+/*=======================*/
 
+/*
+  颜色自定义，如果需要自定义，将“禁用”删除，然后填入自己想要的颜色即可
+*/
+:root, * {
+
+  /* [弹幕]默认头部颜色*/
+  --sakaban-fish-primary: #8A8A7A !important;
+
+  /* [弹幕]默认身体颜色 */
+  --sakaban-fish-secondary: #E7E7D9 !important;
+
+  /* [弹幕]主播头部颜色 */
+  禁用--yt-live-chat-owner-color: #66ccff !important;
+
+  /* [弹幕]房管头部颜色 */
+  禁用--yt-live-chat-moderator-color: #66ccff !important;
+
+  /* [弹幕]舰长头部颜色 */
+  禁用--yt-live-chat-sponsor-color: #66ccff !important;
+
+  /* [礼物]上舰身体颜色 */
+  禁用--yt-live-chat-sponsor-header-color: #66ccff !important;
+
+  /* [礼物]礼物、SC头部颜色 */
+  禁用--yt-live-chat-paid-message-primary-color: #66ccff !important;
+  
+  /* [礼物]礼物、SC身体颜色 */
+  禁用--yt-live-chat-paid-message-secondary-color: #66ccff !important;
+
+  /* [礼物]礼物、SC字体颜色 */
+  禁用--yt-live-chat-paid-message-color: #66ccff !important;
+}
+
+yt-live-chat-renderer {
+  background-color: transparent
+}
 yt-live-chat-item-list-renderer #item-scroller {
   overflow: hidden !important
 }
@@ -271,12 +310,11 @@ yt-live-chat-paid-message-renderer #card #content {
 
 yt-live-chat-text-message-renderer #image-and-message,
 yt-live-chat-text-message-renderer #content #message {
-  background-color: #E7E7D9;
-  color: #8A8A7A;
+  background-color: var(--sakaban-fish-secondary);
   border-bottom-right-radius: 120px;
   border-bottom-left-radius: 100px;
   font-style: normal !important;
-  color: #8A8A7A !important;
+  color: var(--sakaban-fish-primary) !important;
   text-decoration: none !important;
   line-height: 30px !important;
   text-align: left;
@@ -344,7 +382,7 @@ yt-live-chat-text-message-renderer #content:after {
   top: 60px;
   width: 79px;
   height: 64px;
-  background-color: #8A8A7A;
+  background-color: var(--sakaban-fish-primary);
   border-top-right-radius: 154%;
   border-bottom-left-radius: 300%;
   border-bottom-right-radius: 104%;
@@ -393,7 +431,7 @@ yt-live-chat-author-chip #chat-badges {
 }
 
 yt-live-chat-text-message-renderer #content yt-live-chat-author-chip {
-  background-color: #8A8A7A;
+  background-color: var(--sakaban-fish-primary);
   color: white;
   border-top-left-radius: 70px;
   border-top-right-radius: 60px;
