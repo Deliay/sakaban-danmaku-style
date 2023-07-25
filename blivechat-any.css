@@ -5,6 +5,9 @@
   Zero版改动说明
   =======================
   Zero版完全重写了基础样式
+  用card的::before,::after模拟鱼尾，然后用renderer的::after来放鱼眼background
+  把圆角加到header、content ，拼接起来做成鱼身即可在鱼身显示更多内容。
+
   相较于魔理叉版本，这个版本获得更好的兼容性和扩展性。支持原版的blivechat。也能随意更换颜色，
   原版只能替换素材中的颜色，而在ZeroAsh版本中则可以使用background-color进行替换。
 
@@ -287,7 +290,7 @@ yt-live-chat-text-message-renderer #image-and-message #message {
 
 yt-live-chat-text-message-renderer #image-and-message {
   padding-left: 0px;
-  min-height: 100px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
