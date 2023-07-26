@@ -367,8 +367,8 @@ yt-live-chat-text-message-renderer #content #message {
   padding-left: 120px;
 }
 
-yt-live-chat-text-message-renderer #image-and-message #message {
-  padding: 32px;
+yt-live-chat-text-message-renderer #image-and-message *:first-child {
+  padding-left: 150px;
 }
 
 yt-live-chat-text-message-renderer #image-and-message {
@@ -376,7 +376,7 @@ yt-live-chat-text-message-renderer #image-and-message {
   min-height: 75px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
