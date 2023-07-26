@@ -275,7 +275,7 @@ yt-live-chat-paid-message-renderer,
   font-family: var(--sakaban-font-family) !important;
   font-weight: var(--sakaban-font-weight) !important;
   font-size: var(--sakaban-font-size) !important;
-  text-stroke: var(--sakaban-text-stroke) !important;
+  /* text-stroke: var(--sakaban-text-stroke) !important; */
   -webkit-text-stroke: var(--sakaban-text-stroke) !important;
 }
 
@@ -322,6 +322,7 @@ yt-live-chat-text-message-renderer #content yt-live-chat-author-chip #author-nam
   margin-left: 135px;
   order: 1;
   overflow: hidden;
+  overflow-wrap: normal;
   text-wrap: nowrap;
   text-overflow: ellipsis;
   flex-grow: 0;
