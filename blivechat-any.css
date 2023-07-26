@@ -369,7 +369,7 @@ yt-live-chat-text-message-renderer #content #message {
 }
 
 yt-live-chat-text-message-renderer #image-and-message *:first-child {
-  padding-left: 150px;
+  padding-left: 120px;
 }
 
 yt-live-chat-text-message-renderer #image-and-message {
@@ -379,6 +379,10 @@ yt-live-chat-text-message-renderer #image-and-message {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+}
+
+yt-live-chat-text-message-renderer #image-and-message #message {
+  padding-bottom: 0px;
 }
 
 yt-live-chat-membership-item-renderer #card #content {
