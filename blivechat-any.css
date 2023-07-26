@@ -373,7 +373,7 @@ yt-live-chat-text-message-renderer #image-and-message #message {
 
 yt-live-chat-text-message-renderer #image-and-message {
   padding-left: 0px;
-  min-height: 50px;
+  min-height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
