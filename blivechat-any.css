@@ -40,12 +40,6 @@ yt-live-chat-ticker-renderer {
   /* [全局]字号设置 */
   --sakaban-font-size: 1.5rem !important;
 
-  /* [全局]文字描边 */
-  --sakaban-text-stroke: none !important;
-
-  /* [全局]整体缩放，如果有元素看不到，可以试试调小该值 */
-  --sakaban-scale-factor: 1.0;
-
   /* [弹幕]默认头部颜色*/
   --sakaban-fish-primary: #8A8A7A !important;
 
