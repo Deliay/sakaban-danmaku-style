@@ -55,6 +55,7 @@ yt-live-chat-ticker-renderer {
   /* [礼物]舰长身体颜色 */
   --sakaban-new-member-body: var(--sakaban-fish-secondary);
 
+  /* [弹幕]鱼的尾巴缩放 */
   --sakaban-tail-scale: 1.0;
 
   /* [弹幕]主播头部颜色 */
