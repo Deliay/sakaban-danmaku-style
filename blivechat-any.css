@@ -49,6 +49,9 @@ yt-live-chat-ticker-renderer {
   /* [弹幕]默认弹幕颜色 */
   --sakaban-fish-message: #8A8A7A !important;
 
+  /* [弹幕]默认发送者颜色 */
+  --sakaban-fish-sender: #FFFFFF !important;
+
   /* [弹幕]主播头部颜色 */
   禁用--yt-live-chat-owner-color: #66ccff !important;
 
@@ -146,6 +149,26 @@ yt-live-chat-membership-item-renderer #card,
 yt-live-chat-paid-message-renderer #card {
   font-size: var(--sakaban-font-size) !important;
   box-shadow: none !important;
+}
+
+
+/* background: linear-gradient(180deg, black 48%, gery 48%); */
+/* background: linear-gradient(180deg, var(--yt-live-chat-sponsor-color) 48%, var(--yt-live-chat-sponsor-header-color) 48%); */
+/* background: linear-gradient(180deg, black 48%, grey 48%); */
+/* background: linear-gradient(180deg, var(--yt-live-chat-paid-message-secondary-color) 48%, var(--yt-live-chat-paid-message-primary-color) 48%); */
+yt-live-chat-membership-item-renderer,
+yt-live-chat-text-message-renderer,
+yt-live-chat-paid-message-renderer,
+#author-name.yt-live-chat-paid-message-renderer,
+yt-live-chat-membership-item-renderer #card,
+yt-live-chat-paid-message-renderer #card,
+#author-name.yt-live-chat-author-chip {
+  font-family: var(--sakaban-font-family) !important;
+  font-weight: var(--sakaban-font-weight) !important;
+  font-size: var(--sakaban-font-size) !important;
+  /* text-stroke: var(--sakaban-text-stroke) !important; */
+  -webkit-text-stroke: var(--sakaban-text-stroke) !important;
+  color: var(--sakaban-fish-sender);
 }
 
 yt-live-chat-membership-item-renderer #card {
@@ -262,23 +285,6 @@ yt-live-chat-membership-item-renderer+* {
   margin-top: 32px;
 }
 
-
-/* background: linear-gradient(180deg, black 48%, gery 48%); */
-/* background: linear-gradient(180deg, var(--yt-live-chat-sponsor-color) 48%, var(--yt-live-chat-sponsor-header-color) 48%); */
-/* background: linear-gradient(180deg, black 48%, grey 48%); */
-/* background: linear-gradient(180deg, var(--yt-live-chat-paid-message-secondary-color) 48%, var(--yt-live-chat-paid-message-primary-color) 48%); */
-yt-live-chat-membership-item-renderer,
-yt-live-chat-text-message-renderer,
-yt-live-chat-paid-message-renderer,
-#author-name.yt-live-chat-author-chip {
-
-  font-family: var(--sakaban-font-family) !important;
-  font-weight: var(--sakaban-font-weight) !important;
-  font-size: var(--sakaban-font-size) !important;
-  /* text-stroke: var(--sakaban-text-stroke) !important; */
-  -webkit-text-stroke: var(--sakaban-text-stroke) !important;
-}
-
 yt-live-chat-text-message-renderer #content yt-live-chat-author-chip,
 yt-live-chat-membership-item-renderer #card #header,
 yt-live-chat-paid-message-renderer #card #header {
@@ -326,6 +332,7 @@ yt-live-chat-text-message-renderer #content yt-live-chat-author-chip #author-nam
   text-wrap: nowrap;
   text-overflow: ellipsis;
   flex-grow: 0;
+  color: var(--sakaban-fish-sender);
 }
 
 
