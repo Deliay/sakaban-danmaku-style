@@ -12,7 +12,7 @@
   --sakaban-font-size: 1.5rem !important;
 
   /* [弹幕]默认头部颜色*/
-  --sakaban-fish-primary: #8A8A7A !important;
+  --sakaban-fish-primary: #8881EA !important;
 
   /* [弹幕]默认身体颜色 */
   --sakaban-fish-secondary: #E7E7D9 !important;
@@ -23,20 +23,16 @@
   /* [弹幕]默认发送者颜色 */
   --sakaban-fish-sender: #FFFFFF !important;
 
-  /* [礼物]舰长身体颜色 */
   --sakaban-new-member-body: var(--sakaban-fish-secondary);
 
-  /* [弹幕]鱼的尾巴缩放 */
-  --sakaban-tail-scale: 1.0;
-
   /* [弹幕]主播头部颜色 */
-  禁用--yt-live-chat-owner-color: #66ccff !important;
+  --yt-live-chat-owner-color: #8881EA !important;
 
   /* [弹幕]房管头部颜色 */
-  禁用--yt-live-chat-moderator-color: #66ccff !important;
+  --yt-live-chat-moderator-color: #8881EA !important;
 
   /* [弹幕]舰长头部颜色 */
-  禁用--yt-live-chat-sponsor-color: #66ccff !important;
+  --yt-live-chat-sponsor-color: #8881EA !important;
 
   /* [礼物]上舰身体颜色 */
   禁用--yt-live-chat-sponsor-header-color: #66ccff !important;
