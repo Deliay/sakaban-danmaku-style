@@ -2,11 +2,6 @@
   使用说明：先复制blivechat-any.css，然后在后面追加这个文件的内容
 */
 :root, * {
-  /* [全局]字体设置 */
-  --sakaban-font-family: 微软雅黑, Microsoft YaHei, MiSans !important;
-
-  /* [全局]字体样式 */
-  --sakaban-font-weight: bold !important;
 
   /* [全局]字号设置 */
   --sakaban-font-size: 1.5rem !important;
@@ -18,12 +13,10 @@
   --sakaban-fish-secondary: #E7E7D9 !important;
 
   /* [弹幕]默认弹幕颜色 */
-  --sakaban-fish-message: #8A8A7A !important;
+  --sakaban-fish-message: hsl(0, 0%, 35%) !important;
 
   /* [弹幕]默认发送者颜色 */
   --sakaban-fish-sender: #FFFFFF !important;
-
-  --sakaban-new-member-body: var(--sakaban-fish-secondary);
 
   /* 对齐选项 */
   /* flex-start: 左侧对齐 */
@@ -40,26 +33,13 @@
   /* [弹幕]舰长头部颜色 */
   --yt-live-chat-sponsor-color: #8881EA !important;
 
-  /* [礼物]上舰身体颜色 */
-  禁用--yt-live-chat-sponsor-header-color: #66ccff !important;
-
-  /* [礼物]礼物、SC头部颜色 */
-  禁用--yt-live-chat-paid-message-primary-color: #66ccff !important;
-  
-  /* [礼物]礼物、SC身体颜色 */
-  禁用--yt-live-chat-paid-message-secondary-color: #66ccff !important;
-
-  /* [礼物]礼物、SC字体颜色 */
-  禁用--yt-live-chat-paid-message-color: #66ccff !important;
-
 }
 
 yt-live-chat-ticker-renderer {
   display: block;
 }
 
-yt-live-chat-item-list-renderer #items *:first-child yt-live-chat-author-chip::before,
-yt-live-chat-item-list-renderer #items yt-live-chat-paid-message-renderer:first-child #header::before {
+yt-live-chat-item-list-renderer #items yt-live-chat-text-message-renderer:first-child yt-live-chat-author-chip::before {
   display: none;
 }
 

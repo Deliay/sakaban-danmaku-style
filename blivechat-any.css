@@ -47,7 +47,7 @@ yt-live-chat-ticker-renderer {
   --sakaban-fish-secondary: #E7E7D9 !important;
 
   /* [弹幕]默认弹幕颜色 */
-  --sakaban-fish-message: hsl(0, 0%, 45%) !important;
+  --sakaban-fish-message: hsl(0, 0%, 35%) !important;
 
   /* [弹幕]默认发送者颜色 */
   --sakaban-fish-sender: #FFFFFF !important;
