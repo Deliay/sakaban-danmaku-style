@@ -25,6 +25,12 @@
 
   --sakaban-new-member-body: var(--sakaban-fish-secondary);
 
+  /* 对齐选项 */
+  /* flex-start: 左侧对齐 */
+  /* flex-end: 右侧对齐 */
+  /* center: 居中对齐 */
+  --sakaban-align: flex-end;
+
   /* [弹幕]主播头部颜色 */
   --yt-live-chat-owner-color: #8881EA !important;
 
@@ -46,6 +52,15 @@
   /* [礼物]礼物、SC字体颜色 */
   禁用--yt-live-chat-paid-message-color: #66ccff !important;
 
+}
+
+yt-live-chat-ticker-renderer {
+  display: block;
+}
+
+yt-live-chat-item-list-renderer #items *:first-child yt-live-chat-author-chip::before,
+yt-live-chat-item-list-renderer #items yt-live-chat-paid-message-renderer:first-child #header::before {
+  display: none;
 }
 
 yt-live-chat-text-message-renderer yt-live-chat-author-chip::before,
