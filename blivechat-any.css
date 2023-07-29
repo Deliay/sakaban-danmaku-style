@@ -59,7 +59,7 @@ yt-live-chat-ticker-renderer {
   --sakaban-tail-scale: 1.0;
 
   /* [弹幕]鱼的描边 */
-  --sakaban-border-color: hsl(0 0% 10%);
+  --sakaban-border-color: hsla(0, 0%, 0%, 0.5);
 
   /* [弹幕]鱼的描边大小 */
   --sakaban-border-size: 2px;
@@ -389,6 +389,17 @@ yt-live-chat-membership-item-renderer #card #header #header-content {
   flex-direction: row;
 }
 
+yt-live-chat-text-message-renderer #content  #image-and-message #message {
+  border-style: none;
+}
+
+yt-live-chat-text-message-renderer #content  #image-and-message {
+  border-style: solid;
+  border-width: var(--sakaban-border-size);
+  border-color: var(--sakaban-border-color);
+  border-top: none;
+}
+
 yt-live-chat-text-message-renderer #content #message,
 yt-live-chat-membership-item-renderer #card #content,
 yt-live-chat-paid-message-renderer #card #content {
@@ -456,10 +467,14 @@ yt-live-chat-membership-item-renderer::after {
   background-color: var(--sakaban-new-member-body, --yt-live-chat-sponsor-header-color);
   content: '';
   display: block;
-  width: 100%;
+  width: calc(100% - 4px);
   height: calc(var(--sakaban-font-size) * 2.666);
   border-bottom-left-radius: 120px;
   border-bottom-right-radius: 100px;
+  border-style: solid;
+  border-width: var(--sakaban-border-size);
+  border-color: var(--sakaban-border-color);
+  border-top: none;
 }
 
 [price-level="0"] {
