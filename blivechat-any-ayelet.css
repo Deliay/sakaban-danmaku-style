@@ -1,9 +1,6 @@
 /*
   使用说明：先复制blivechat-any.css，然后在后面追加这个文件的内容
 */
-yt-live-chat-ticker-renderer {
-  display: block;
-}
 
 yt-live-chat-item-list-renderer #items yt-live-chat-text-message-renderer:first-child yt-live-chat-author-chip::before {
   display: none;
