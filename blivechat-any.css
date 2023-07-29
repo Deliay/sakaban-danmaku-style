@@ -58,6 +58,12 @@ yt-live-chat-ticker-renderer {
   /* [弹幕]鱼的尾巴缩放 */
   --sakaban-tail-scale: 1.0;
 
+  /* [弹幕]鱼的描边 */
+  --sakaban-border-color: hsl(0 0% 10%);
+
+  /* [弹幕]鱼的描边大小 */
+  --sakaban-border-size: 2px;
+
   /* 对齐选项 */
   /* flex-start: 左侧对齐 */
   /* flex-end: 右侧对齐 */
@@ -225,6 +231,10 @@ yt-live-chat-paid-message-renderer #card::after {
   border-bottom-right-radius: 104%;
   z-index: -1;
   transform: scale(var(--sakaban-tail-scale)) rotateY(180deg);
+  border-width: var(--sakaban-border-size);
+  border-color: var(--sakaban-border-color);
+  border-style: solid;
+  border-top: none;
 }
 
 yt-live-chat-membership-item-renderer #card::before,
@@ -332,6 +342,10 @@ yt-live-chat-paid-message-renderer #card #header {
   border-top-left-radius: 60px;
   background-color: var(--yt-live-chat-paid-message-secondary-color, --yt-live-chat-sponsor-header-color);
   position: relative;
+  border-style: solid;
+  border-width: var(--sakaban-border-size);
+  border-color: var(--sakaban-border-color);
+  border-bottom-style: none;
 }
 
 yt-live-chat-membership-item-renderer #card #header {
@@ -389,6 +403,10 @@ yt-live-chat-paid-message-renderer #card #content {
   padding-bottom: calc(var(--sakaban-font-size));
   display: flex;
   justify-content: center;
+  border-style: solid;
+  border-width: var(--sakaban-border-size);
+  border-color: var(--sakaban-border-color);
+  border-top: none;
 }
 
 yt-live-chat-paid-message-renderer #card #content {
@@ -484,6 +502,10 @@ yt-live-chat-text-message-renderer #content yt-live-chat-author-chip {
   padding: 5px;
   padding-right: 10px;
   margin-right: 0px;
+  border-style: solid;
+  border-width: var(--sakaban-border-size);
+  border-color: var(--sakaban-border-color);
+  border-bottom-style: none;
 }
 
 yt-live-chat-text-message-renderer[author-type="moderator"] #content yt-live-chat-author-chip,
