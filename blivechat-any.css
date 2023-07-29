@@ -47,7 +47,7 @@ yt-live-chat-ticker-renderer {
   --sakaban-fish-secondary: #E7E7D9 !important;
 
   /* [弹幕]默认弹幕颜色 */
-  --sakaban-fish-message: #8A8A7A !important;
+  --sakaban-fish-message: hsl(0, 0%, 45%) !important;
 
   /* [弹幕]默认发送者颜色 */
   --sakaban-fish-sender: #FFFFFF !important;
@@ -182,10 +182,6 @@ yt-live-chat-item-list-renderer yt-live-chat-text-message-renderer {
   margin-right: 66px;
   justify-content: var(--sakaban-align);
 }
-#chat-items yt-live-chat-text-message-renderer #card ,
-#chat-items yt-live-chat-text-message-renderer #card #content {
-  flex-grow: 1;
-}
 
 /* background: linear-gradient(180deg, black 48%, gery 48%); */
 /* background: linear-gradient(180deg, var(--yt-live-chat-sponsor-color) 48%, var(--yt-live-chat-sponsor-header-color) 48%); */
@@ -268,7 +264,7 @@ yt-live-chat-membership-item-renderer {
   min-height: 100px;
   margin: 0;
   max-width: calc(100% - 75px);
-  min-width: 75%;
+  min-width: 350px;
 }
 
 yt-live-chat-paid-message-renderer,
