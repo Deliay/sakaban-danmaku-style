@@ -15,7 +15,7 @@ yt-live-chat-text-message-renderer yt-live-chat-author-chip::before {
   position: absolute;
   transform: scale(0.4);
   left: -110px;
-  bottom: -30px;
+  bottom: -15px;
   visibility: visible;
 }
 

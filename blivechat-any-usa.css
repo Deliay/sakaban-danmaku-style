@@ -28,8 +28,8 @@ yt-live-chat-text-message-renderer yt-live-chat-author-chip::before {
   height: 88px;
   position: absolute;
   transform: scale(0.4);
-  left: -115px;
-  bottom: 0px;
+  left: -105px;
+  bottom: 20px;
   visibility: visible;
 }
 
