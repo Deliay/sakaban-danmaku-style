@@ -27,12 +27,13 @@ yt-live-chat-ticker-renderer {
 }
 /*=======================*/
 
+@import url('https://fonts.font.im/css?family=Noto+Sans');
 /*
   颜色自定义，如果需要自定义，将“禁用”删除，然后填入自己想要的颜色即可
 */
 :root, * {
   /* [全局]字体设置 */
-  --sakaban-font-family: 微软雅黑, Microsoft YaHei, MiSans !important;
+  --sakaban-font-family: Noto Sans, 微软雅黑, Microsoft YaHei, MiSans !important;
 
   /* [全局]字体样式 */
   --sakaban-font-weight: bold !important;
@@ -92,6 +93,7 @@ yt-live-chat-ticker-renderer {
   禁用--yt-live-chat-paid-message-color: #66ccff !important;
 
 }
+
 
 yt-live-chat-text-message-renderer,
 yt-live-chat-paid-message-renderer,
@@ -482,7 +484,7 @@ yt-live-chat-membership-item-renderer::after {
   background-color: var(--sakaban-new-member-body, --yt-live-chat-sponsor-header-color);
   content: '';
   display: block;
-  width: calc(100% - 4px);
+  /* width: calc(100% - 4px); */
   height: calc(var(--sakaban-font-size) * 2.666);
   border-bottom-left-radius: 120px;
   border-bottom-right-radius: 100px;
