@@ -394,7 +394,6 @@ yt-live-chat-text-message-renderer #content yt-live-chat-author-chip #author-nam
   margin-left: 175px;
   order: 1;
   flex-grow: 0;
-  word-break: keep-all;
   text-wrap: balance;
   color: var(--sakaban-fish-sender) !important;
 }
