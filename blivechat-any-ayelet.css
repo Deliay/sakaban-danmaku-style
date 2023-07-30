@@ -31,7 +31,7 @@ yt-live-chat-text-message-renderer yt-live-chat-author-chip::before {
   --sakaban-fish-secondary: #E7E7D9 !important;
 
   /* [弹幕]默认弹幕颜色 */
-  --sakaban-fish-message: hsl(0, 0%, 35%) !important;
+  --sakaban-fish-message: hsl(0, 0%, 15%) !important;
 
   /* [弹幕]默认发送者颜色 */
   --sakaban-fish-sender: #000 !important;

@@ -64,7 +64,7 @@ yt-live-chat-text-message-renderer[author-type="member"] yt-live-chat-author-chi
   --sakaban-fish-secondary: #f9e1e9 !important;
 
   /* [弹幕]默认弹幕颜色 */
-  --sakaban-fish-message: hsl(0, 0%, 35%) !important;
+  --sakaban-fish-message: hsl(0, 0%, 25%) !important;
 
   /* [弹幕]默认发送者颜色 */
   --sakaban-fish-sender: hsl(340, 100%, 5%) !important;
