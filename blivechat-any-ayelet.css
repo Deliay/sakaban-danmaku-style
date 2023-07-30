@@ -57,4 +57,6 @@ yt-live-chat-text-message-renderer yt-live-chat-author-chip::before {
   /* [弹幕]舰长头部颜色 */
   --yt-live-chat-sponsor-color: #8881EA !important;
 
+  /* [礼物]上舰身体颜色 */
+  --yt-live-chat-sponsor-header-color: #8881EA !important;
 }
