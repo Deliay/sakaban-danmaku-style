@@ -34,7 +34,7 @@ yt-live-chat-text-message-renderer yt-live-chat-author-chip::before {
   --sakaban-fish-message: hsl(0, 0%, 35%) !important;
 
   /* [弹幕]默认发送者颜色 */
-  --sakaban-fish-sender: #FFFFFF !important;
+  --sakaban-fish-sender: #000 !important;
 
   /* [弹幕]鱼的描边大小 */
   --sakaban-border-size: 4px;
