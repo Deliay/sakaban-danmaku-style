@@ -1,12 +1,6 @@
-/* 引导模版 by LAPLACE Chat */
 /*
-  本模版为引导模版，包含几乎所有的 CSS 变量定义，您可在当前模版的基础上通过修改 CSS 对样式进行自定义
-  本编辑器为 VS Code 同款编辑器，支持颜色可视化取色，快捷键也与 VS Code 一致，可直接在本编辑器中设计样式
-  编辑的内容会自动保存在本地，页面刷新后可自动恢复
-
-  被注释掉的属性可按 ctrl - /（Windows）或者 command - /（macOS）取消注释
- */
-
+  萨卡班甲鱼样式 Laplace弹幕姬版本
+*/
 /* 引入 Google Fonts 字体，理论上国内可以直接访问 */
 /* 更多字形可通过访问 https://fonts.google.com/ 进行挑选 */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400;1,600&display=swap');
@@ -29,14 +23,8 @@
   /* [弹幕]默认身体颜色 */
   --sakaban-fish-secondary: #E7E7D9 !important;
 
-  /* [弹幕]默认弹幕颜色 */
-  --sakaban-fish-message: hsl(0, 0%, 35%) !important;
-
   /* [弹幕]默认发送者颜色 */
   --sakaban-fish-sender: #FFFFFF !important;
-
-  /* [礼物]舰长身体颜色 */
-  --sakaban-new-member-body: var(--sakaban-fish-secondary);
 
   /* [弹幕]鱼的尾巴缩放 */
   --sakaban-tail-scale: 1.0;
@@ -46,33 +34,6 @@
 
   /* [弹幕]鱼的描边大小 */
   --sakaban-border-size: 2px;
-
-  /* 对齐选项 */
-  /* flex-start: 左侧对齐 */
-  /* flex-end: 右侧对齐 */
-  /* center: 居中对齐 */
-  --sakaban-align: flex-start;
-
-  /* [弹幕]主播头部颜色 */
-  禁用--yt-live-chat-owner-color: #66ccff !important;
-
-  /* [弹幕]房管头部颜色 */
-  禁用--yt-live-chat-moderator-color: #66ccff !important;
-
-  /* [弹幕]舰长头部颜色 */
-  禁用--yt-live-chat-sponsor-color: #66ccff !important;
-
-  /* [礼物]上舰身体颜色 */
-  禁用--yt-live-chat-sponsor-header-color: #66ccff !important;
-
-  /* [礼物]礼物、SC头部颜色 */
-  禁用--yt-live-chat-paid-message-primary-color: #66ccff !important;
-  
-  /* [礼物]礼物、SC身体颜色 */
-  禁用--yt-live-chat-paid-message-secondary-color: #66ccff !important;
-
-  /* [礼物]礼物、SC字体颜色 */
-  禁用--yt-live-chat-paid-message-color: #66ccff !important;
 
   /* 以下为平台内置变量 */
   /* 应用全局自定义字体 */
