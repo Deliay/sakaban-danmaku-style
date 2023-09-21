@@ -223,7 +223,7 @@ body { background-color: transparent; }
   text-shadow: var(--text-shadow);
   -webkit-text-stroke: var(--sakaban-text-stroke) !important;
   color: var(--sakaban-fish-sender);
-  width: calc(100% - 80px);
+  width: calc(100% - 45px);
   display: flex;
   flex-direction: row-reverse;
 }

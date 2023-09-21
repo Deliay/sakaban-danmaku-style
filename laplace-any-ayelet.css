@@ -42,6 +42,6 @@
   --sakaban-align: flex-end;
 }
 
-* + .event-list .event.event-type--message {
+.event-list .event.event-type--message {
   margin-top: 30px;
 }
