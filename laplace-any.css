@@ -230,6 +230,7 @@ body { background-color: transparent; }
 .event-list .event.event-type--message .content-wrap {
   z-index: 2;
   flex-grow: 1;
+  position: relative;
 }
 .event-list .event.event-type--message .avatar-wrap .avatar-frame,
 .event-list .event.event-type--message .avatar-wrap picture {
