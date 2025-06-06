@@ -4,17 +4,49 @@ body {
   background-color: transparent;
 }
 
+
+@media screen and (min-width: 700px) {
+  .event-list .event.event-type--message {
+    max-width: 700px !important;
+    min-height: 16rem !important;
+    background-size: auto 12rem, 95% 100% !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  .event-list .event.event-type--message {
+    max-width: 800px !important;
+    min-height: 17rem !important;
+    padding-left: 10rem !important;
+    background-size: auto 13rem, 95% 100% !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  .event-list .event.event-type--message {
+    max-width: 900px !important;
+    min-height: 18rem !important;
+    padding-left: 11rem !important;
+    background-size: auto 14rem, 95% 100% !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .event-list .event.event-type--message {
+    max-width: 1000px !important;
+    min-height: 19rem !important;
+    padding-left: 12rem !important;
+    background-size: auto 15rem, 95% 100% !important;
+  }
+}
+
 .event .username,
 .event .message,
 .event .price {
   text-shadow: var(--text-shadow);
 }
-
 /* 容器 */
 .event-list .event.event-type--message {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 600px;
   min-height: 12rem;
   margin-top: 2rem;
   padding-top: 1rem;
